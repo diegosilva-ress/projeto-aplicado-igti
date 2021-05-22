@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import jsPDF from 'jspdf';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projeto-aplicado-igti';
+
+  gerarPDF() {
+    const doc = new jsPDF();
+    doc.text('Teste Gerador PDF', 10, 10);
+    doc.save('a4.pdf');
+  }
+
 }
