@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import jsPDF from 'jspdf';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +7,10 @@ import jsPDF from 'jspdf';
 })
 export class AppComponent {
 
-  gerarPDF() {
+  /*gerarPDF() {
     const doc = new jsPDF();
     doc.text('Teste Gerador PDF', 10, 10);
     doc.save('a4.pdf');
-  }
+  }*/
 
 }
