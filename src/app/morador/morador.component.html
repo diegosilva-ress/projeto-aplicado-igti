@@ -1,1 +1,12 @@
-<p>morador works!</p>
+<mat-toolbar color="primary">
+  <span>Tela Inicial - Morador</span>
+</mat-toolbar>
+<button mat-button [matMenuTriggerFor]="financeiro">Financeiro</button>
+<mat-menu #financeiro="matMenu" yPosition="below">
+  <button mat-menu-item>Consultar Pagamentos</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="avisos">Avisos</button>
+<mat-menu #avisos="matMenu" yPosition="below">
+  <button mat-menu-item>Consultar Quadro de Avisos</button>
+  <button mat-menu-item>Entre em Contato</button>
+</mat-menu>

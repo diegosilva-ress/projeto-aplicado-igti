@@ -13,13 +13,16 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import { EntreContatoComponent } from './entre-contato/entre-contato.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SindicoComponent,
     MoradorComponent,
-    HomeComponent
+    HomeComponent,
+    EntreContatoComponent
   ],
     imports: [
         BrowserModule,
@@ -32,6 +35,7 @@ import {MatIconModule} from '@angular/material/icon';
         MatFormFieldModule,
         MatIconModule,
         BrowserAnimationsModule,
+        MatMenuModule,
     ],
   providers: [],
   bootstrap: [AppComponent]
