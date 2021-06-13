@@ -15,6 +15,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import { EntreContatoComponent } from './entre-contato/entre-contato.component';
+import {MatSelectModule} from '@angular/material/select';
+import {MatOptionModule} from '@angular/material/core';
+import { QuadroAvisosComponent } from './quadro-avisos/quadro-avisos.component';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -22,21 +26,25 @@ import { EntreContatoComponent } from './entre-contato/entre-contato.component';
     SindicoComponent,
     MoradorComponent,
     HomeComponent,
-    EntreContatoComponent
+    EntreContatoComponent,
+    QuadroAvisosComponent
   ],
-    imports: [
-        BrowserModule,
-        BrowserAnimationsModule,
-        AppRoutingModule,
-        MatToolbarModule,
-        ReactiveFormsModule,
-        MatButtonModule,
-        MatInputModule,
-        MatFormFieldModule,
-        MatIconModule,
-        BrowserAnimationsModule,
-        MatMenuModule,
-    ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatIconModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatSelectModule,
+    MatOptionModule,
+    MatCardModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

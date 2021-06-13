@@ -7,6 +7,6 @@
 </mat-menu>
 <button mat-button [matMenuTriggerFor]="avisos">Avisos</button>
 <mat-menu #avisos="matMenu" yPosition="below">
-  <button mat-menu-item>Consultar Quadro de Avisos</button>
-  <button mat-menu-item>Entre em Contato</button>
+  <button mat-menu-item routerLink="/avisos">Consultar Quadro de Avisos</button>
+  <button mat-menu-item routerLink="/contato">Entre em Contato</button>
 </mat-menu>

@@ -1,1 +1,31 @@
-<p>entre-contato works!</p>
+<mat-toolbar color="primary">
+  <span>Entre em Contato</span>
+</mat-toolbar>
+
+<div class="form">
+
+  <mat-form-field appearance="fill">
+    <mat-label>Título</mat-label>
+    <input matInput width="80px">
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Tipo Solicitação</mat-label>
+    <mat-select>
+      <mat-option value="solicitacao">Solicitação</mat-option>
+      <mat-option value="reclamacao">Reclamação</mat-option>
+      <mat-option value="duvida">Dúvida</mat-option>
+      <mat-option value="elogio">Elogio</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Descrição</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>
+
+<div class="actions">
+  <button mat-raised-button color="primary" routerLink="/morador">Voltar</button>
+  <button mat-raised-button color="primary">Enviar</button>
+</div>
