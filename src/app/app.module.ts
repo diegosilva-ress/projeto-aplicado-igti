@@ -22,6 +22,8 @@ import {MatCardModule} from '@angular/material/card';
 import { ConsultaPagamentosComponent } from './consulta-pagamentos/consulta-pagamentos.component';
 import { CriarAvisoComponent } from './criar-aviso/criar-aviso.component';
 import {MatFileUploadModule} from 'angular-material-fileupload';
+import { CaixaComponent } from './caixa/caixa.component';
+import { FuncionariosComponent } from './funcionarios/funcionarios.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {MatFileUploadModule} from 'angular-material-fileupload';
     EntreContatoComponent,
     QuadroAvisosComponent,
     ConsultaPagamentosComponent,
-    CriarAvisoComponent
+    CriarAvisoComponent,
+    CaixaComponent,
+    FuncionariosComponent
   ],
   imports: [
     BrowserModule,
