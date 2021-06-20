@@ -5,6 +5,8 @@ import {MoradorComponent} from './morador/morador.component';
 import {HomeComponent} from './home/home.component';
 import {EntreContatoComponent} from './entre-contato/entre-contato.component';
 import {QuadroAvisosComponent} from './quadro-avisos/quadro-avisos.component';
+import {ConsultaPagamentosComponent} from './consulta-pagamentos/consulta-pagamentos.component';
+import {CriarAvisoComponent} from './criar-aviso/criar-aviso.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -12,6 +14,8 @@ const routes: Routes = [
   {path: 'morador', component: MoradorComponent},
   {path: 'contato', component: EntreContatoComponent},
   {path: 'avisos', component: QuadroAvisosComponent},
+  {path: 'consultaPagamentos', component: ConsultaPagamentosComponent},
+  {path: 'criarAviso', component: CriarAvisoComponent},
   {path: '', redirectTo: 'home', pathMatch: 'full'}
 ];
 

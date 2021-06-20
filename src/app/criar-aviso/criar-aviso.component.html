@@ -1,0 +1,29 @@
+<mat-toolbar color="primary">
+  <span>Criar Aviso</span>
+</mat-toolbar>
+
+<div class="form">
+
+  <mat-form-field appearance="fill" [style.width.px]=700>
+    <mat-label>Título</mat-label>
+    <input matInput>
+  </mat-form-field>
+
+  <mat-form-field appearance="fill" [style.width.px]=700>
+    <mat-label>Descrição</mat-label>
+    <textarea matInput rows="10"></textarea>
+  </mat-form-field>
+
+  <mat-label>Imagem</mat-label>
+  <input id="singleFile" type="file" [fileUploadInputFor]= "fileUploadQueue"/>
+  <br>
+  <mat-file-upload-queue #fileUploadQueue
+                         [fileAlias]="'file'">
+    <mat-file-upload [file]="file" [id]="i" *ngFor="let file of fileUploadQueue.files; let i = index"></mat-file-upload>
+  </mat-file-upload-queue>
+</div>
+
+<div class="actions">
+  <button mat-raised-button color="primary" routerLink="/sindico">Voltar</button>
+  <button mat-raised-button color="primary">Enviar</button>
+</div>

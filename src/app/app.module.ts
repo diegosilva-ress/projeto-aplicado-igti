@@ -19,6 +19,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatOptionModule} from '@angular/material/core';
 import { QuadroAvisosComponent } from './quadro-avisos/quadro-avisos.component';
 import {MatCardModule} from '@angular/material/card';
+import { ConsultaPagamentosComponent } from './consulta-pagamentos/consulta-pagamentos.component';
+import { CriarAvisoComponent } from './criar-aviso/criar-aviso.component';
+import {MatFileUploadModule} from 'angular-material-fileupload';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import {MatCardModule} from '@angular/material/card';
     MoradorComponent,
     HomeComponent,
     EntreContatoComponent,
-    QuadroAvisosComponent
+    QuadroAvisosComponent,
+    ConsultaPagamentosComponent,
+    CriarAvisoComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +49,7 @@ import {MatCardModule} from '@angular/material/card';
     MatSelectModule,
     MatOptionModule,
     MatCardModule,
+    MatFileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
