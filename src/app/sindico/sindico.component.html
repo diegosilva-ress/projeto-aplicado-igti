@@ -4,11 +4,7 @@
 <button mat-button [matMenuTriggerFor]="financeiro">Financeiro</button>
 <mat-menu #financeiro="matMenu" yPosition="below">
   <button mat-menu-item routerLink="/consultaPagamentos">Consultar Pagamentos</button>
-  <button mat-menu-item>Consultar Caixa Condomínio</button>
-</mat-menu>
-<button mat-button [matMenuTriggerFor]="gestao">Gestão de Pessoas</button>
-<mat-menu #gestao="matMenu" yPosition="below">
-  <button mat-menu-item>Consultar Funcionários</button>
+  <button mat-menu-item routerLink="/caixa">Consultar Caixa Condomínio</button>
 </mat-menu>
 <button mat-button [matMenuTriggerFor]="avisos">Avisos</button>
 <mat-menu #avisos="matMenu" yPosition="below">

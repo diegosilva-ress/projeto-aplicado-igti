@@ -36,7 +36,7 @@ import { FuncionariosComponent } from './funcionarios/funcionarios.component';
     ConsultaPagamentosComponent,
     CriarAvisoComponent,
     CaixaComponent,
-    FuncionariosComponent
+    FuncionariosComponent,
   ],
   imports: [
     BrowserModule,
