@@ -7,10 +7,6 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
-  /*gerarPDF() {
-    const doc = new jsPDF();
-    doc.text('Teste Gerador PDF', 10, 10);
-    doc.save('a4.pdf');
-  }*/
+
 
 }
