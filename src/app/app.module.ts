@@ -24,6 +24,7 @@ import { CriarAvisoComponent } from './criar-aviso/criar-aviso.component';
 import {MatFileUploadModule} from 'angular-material-fileupload';
 import { CaixaComponent } from './caixa/caixa.component';
 import { FuncionariosComponent } from './funcionarios/funcionarios.component';
+import { ListaPagamentosComponent } from './lista-pagamentos/lista-pagamentos.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { FuncionariosComponent } from './funcionarios/funcionarios.component';
     CriarAvisoComponent,
     CaixaComponent,
     FuncionariosComponent,
+    ListaPagamentosComponent,
   ],
   imports: [
     BrowserModule,

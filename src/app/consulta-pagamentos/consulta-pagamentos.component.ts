@@ -15,11 +15,11 @@ export class ConsultaPagamentosComponent implements OnInit {
 
   gerarPDF() {
     const pdf = new jsPDF();
-    var img = new Image()
+    const img = new Image()
 
     img.src = 'assets/boleto.png'
     pdf.addImage(img, 'png', 1, 1, 210, 280);
-    pdf.save();
+    pdf.save('boleto.pdf');
   }
 
 }
