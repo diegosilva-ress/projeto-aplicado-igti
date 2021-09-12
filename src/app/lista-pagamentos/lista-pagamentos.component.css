@@ -1,0 +1,9 @@
+td {
+  padding: 0 18px;
+}
+
+.actions>button {
+  top: 2em;
+  width: 8em;
+  margin-left: 1em;
+}
