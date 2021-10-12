@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {GlobalComponent} from '../global-component';
 
 @Component({
   selector: 'app-entre-contato',
@@ -12,4 +13,7 @@ export class EntreContatoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getHome() {
+    return GlobalComponent.urlPerfilLogado;
+  }
 }
